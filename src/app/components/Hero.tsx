@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowDown, ArrowUpRight, AudioLines, Check } from "lucide-react";
 import { ContactButton } from "./ContactProvider";
 export function Hero() {
@@ -10,7 +11,7 @@ export function Hero() {
         <div className="hero-checks"><span><Check size={15} /> Хүргэлт, суурилуулалт</span><span><Check size={15} /> Техникийн дэмжлэг</span></div>
       </div>
       <div className="hero-visual">
-        <div className="hero-photo" role="img" aria-label="Гэрэлтүүлэг, дэлгэц бүхий арга хэмжээний танхим" />
+        <Image className="hero-photo" src="/b38155c1-f35f-4e60-9287-21756ae7fe0b.jpeg" alt="Синхрон орчуулгын кабин суурилуулсан арга хэмжээний танхим" fill sizes="(max-width: 760px) calc(100vw - 44px), 48vw" priority />
         <div className="visual-top"><span className="live-label"><span /> READY FOR YOUR NEXT EVENT</span><AudioLines size={25} /></div>
         <div className="visual-bottom"><span>BEHIND EVERY GREAT EVENT</span><strong>Бүх зүйл<br />нэг хэмнэлд.</strong><div className="visual-bottom-row"><span>INTERPRO / TECHNICAL SOLUTIONS</span><span className="round-arrow"><ArrowUpRight /></span></div></div>
         <div className="visual-lines" aria-hidden="true">{Array.from({ length: 29 }, (_, index) => <i key={index} style={{ height: `${12 + ((index * 17) % 49)}px` }} />)}</div>

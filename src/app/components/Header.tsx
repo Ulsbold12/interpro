@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { ContactButton } from "./ContactProvider";
-const links = [["#equipment", "Тоног төхөөрөмж"], ["#solutions", "Шийдлүүд"], ["#about", "Бидний тухай"], ["#faq", "Түгээмэл асуулт"]];
+const links = [["#projects", "Бидний ажил"], ["#equipment", "Тоног төхөөрөмж"], ["#solutions", "Шийдлүүд"], ["#about", "Бидний тухай"], ["#faq", "Түгээмэл асуулт"]];
 export function Header() {
   const [open, setOpen] = useState(false);
   return <header className="site-header">

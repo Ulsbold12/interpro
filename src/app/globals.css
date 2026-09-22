@@ -10,3 +10,46 @@
 @media(max-width:374px){.catalog-toolbar{margin-right:-17px}.filter-list{padding-right:17px}}
 .catalog-toolbar .filter-list{min-width:0;max-width:100%}.catalog-results{display:flex;justify-content:space-between;gap:15px;margin:-5px 0 20px;font-size:11px;color:var(--muted)}.product-photo{width:100%;height:100%;object-fit:cover;transition:transform .3s}.product-card:hover .product-photo{transform:scale(1.04)}.product-sku,.stock-badge{position:absolute;background:#fffffff0;backdrop-filter:blur(6px);padding:6px 8px;border-radius:4px;font-size:9px}.product-sku{left:12px;top:12px;font-family:monospace}.stock-badge{left:12px;bottom:12px;background:#e7f4daf2;color:#3a5b24;max-width:calc(100% - 24px)}.product-brand{display:block;color:#7a836f;font-size:10px;margin-bottom:8px}.product-content h3{min-height:48px;line-height:1.45;overflow-wrap:anywhere}.product-content .product-category{min-height:0;margin:8px 0 15px;font-size:11px}.product-price{padding:12px 0}.product-price small{display:block;font-size:9px;color:var(--muted);margin-bottom:5px}.product-price strong{font-size:20px;letter-spacing:-.5px}.product-image-fallback{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#89977c;font-size:12px}.catalog-empty{display:flex;flex-direction:column;align-items:center;gap:15px;text-align:center;padding:45px 20px;border:1px dashed #ccd6be;border-radius:10px;background:#f2f5ec}.catalog-empty>svg{color:#859771}.catalog-empty h3{font-size:18px}.catalog-empty p{font-size:12px;line-height:1.8;color:var(--muted)}.package-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-bottom:20px}.package-price strong{font-size:24px;letter-spacing:-.5px}.package-price span{font-size:10px;color:#7d8870}.featured .package-price span{color:#adbba2}.product-card{display:flex;flex-direction:column}.product-visual{flex-shrink:0}.product-content{display:flex;flex-direction:column;flex:1}.product-content .product-tags{margin-bottom:20px}.product-content .product-bottom{margin-top:auto}
 @media(max-width:760px){.catalog-results{font-size:9px}.product-brand{font-size:8px}.product-content h3{font-size:13px;min-height:57px}.product-content .product-category{font-size:9px;min-height:27px;line-height:1.5}.product-sku{font-size:7px;padding:4px 6px;top:9px;left:9px}.stock-badge{font-size:8px;bottom:9px;left:9px;max-width:calc(100% - 18px);line-height:1.5}.product-price{width:100%;padding:0 0 5px}.product-price strong{font-size:19px}.product-price small{font-size:8px}.product-content .product-tags{margin-bottom:14px}.product-content .product-bottom{padding-top:13px}.package-price strong{font-size:25px}}
+
+/* Real project showcase */
+.hero-photo{object-fit:cover;object-position:center 46%;filter:saturate(.72) contrast(1.04)}
+.hero-visual:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,#0c151720 10%,#10211a4d 43%,#0d1713ed 100%);pointer-events:none}
+.visual-top,.visual-lines{z-index:2}
+.projects-section{background:#242522;color:#f5f7f1;overflow:hidden}
+.projects-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:center}
+.projects-copy .eyebrow{color:#aeb9a3}
+.projects-copy h2{font-size:48px;letter-spacing:-2px;line-height:1.1;margin:18px 0 22px}
+.projects-copy>p{max-width:410px;color:#aeb5a9;font-size:13px;line-height:1.9}
+.project-facts{display:grid;gap:12px;margin:28px 0;color:#d5dacd;font-size:11px}
+.project-facts span{display:flex;align-items:center;gap:10px}
+.project-facts svg{color:var(--lime)}
+.project-cta{color:var(--lime);padding:0}
+.project-gallery{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:220px 220px;gap:12px;transform:rotate(1deg)}
+.project-gallery figure{position:relative;margin:0;border-radius:9px;overflow:hidden;background:#343a32;border:1px solid #ffffff18}
+.project-gallery .project-shot-main{grid-row:1/3}
+.project-gallery img{object-fit:cover;transition:transform .5s ease;filter:saturate(.82)}
+.project-gallery figure:hover img{transform:scale(1.035)}
+.project-gallery figure:nth-child(2) img{object-position:center 58%}
+.project-gallery figure:nth-child(3) img{object-position:center 65%}
+.project-gallery figcaption{position:absolute;left:16px;right:16px;bottom:16px;padding:13px 14px;border:1px solid #ffffff22;border-radius:6px;background:#172019c7;backdrop-filter:blur(10px);z-index:1}
+.project-gallery figcaption span{display:block;font-size:7px;letter-spacing:1.7px;color:var(--lime)}
+.project-gallery figcaption strong{display:block;margin-top:5px;font-size:12px;font-weight:600}
+
+/* Demo-ready inquiry builder */
+.inquiry-form{display:grid;gap:13px;margin-top:22px}
+.inquiry-form label{display:grid;gap:7px;color:#66705f;font-size:10px;font-weight:700}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.inquiry-form input,.inquiry-form textarea,.request-ready textarea{width:100%;border:1px solid #dfe4da;border-radius:7px;background:white;color:var(--ink);font:inherit;font-size:12px;padding:12px 13px;outline:none;resize:vertical}
+.inquiry-form input{min-height:44px}
+.inquiry-form input:focus,.inquiry-form textarea:focus,.request-ready textarea:focus{border-color:#7da44f;box-shadow:0 0 0 3px #91b9661c}
+.inquiry-form .button{width:100%;margin-top:2px}
+.form-privacy{font-size:9px!important;text-align:center;color:#939a8d!important}
+.request-ready{display:grid;justify-items:center;text-align:center;margin-top:22px}
+.request-ready-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--lime);color:#314224}
+.request-ready h3{font-size:18px;margin:13px 0 7px}
+.request-ready>p{font-size:11px;color:var(--muted);line-height:1.7}
+.request-ready textarea{margin:15px 0;text-align:left;line-height:1.7;background:#f2f4ee}
+.request-ready .button{width:100%}
+
+@media(max-width:1050px){.projects-grid{gap:38px}.project-gallery{grid-template-rows:190px 190px}.projects-copy h2{font-size:41px}.desktop-nav{gap:13px}}
+@media(max-width:760px){.projects-grid{grid-template-columns:1fr;gap:34px}.projects-copy h2{font-size:38px}.projects-copy>p{font-size:12px}.project-gallery{grid-template-columns:1fr 1fr;grid-template-rows:285px 160px;gap:9px;transform:none;margin-inline:-7px}.project-gallery .project-shot-main{grid-column:1/3;grid-row:auto}.project-gallery figcaption{left:12px;right:12px;bottom:12px}.form-row{grid-template-columns:1fr}.contact-dialog{max-height:calc(100dvh - 24px)}}
