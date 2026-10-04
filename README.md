@@ -35,3 +35,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # interpro
+
+## Customer inquiries
+
+The catalogue opens an inquiry form with the selected product. Submissions are
+stored in Supabase and notification emails are sent through Resend. The private
+panel at `/admin` supports status updates and retrying failed email notifications.
+
+Configure the services using [the setup guide](docs/inquiry-setup.md) and
+[.env.example](.env.example). Without service credentials the app does not accept
+submissions or fabricate successful responses.
+
+Run `npm test` for mocked backend integration checks and `npm run build` for the
+production build. In environments where Turbopack cannot bind its internal port,
+use `npx next build --webpack`.

@@ -1,22 +1,14 @@
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, AudioLines, Check } from "lucide-react";
-import { ContactButton } from "./ContactProvider";
+import { ArrowRight, Play } from "lucide-react";
 export function Hero() {
   return <section className="hero" id="home">
-    <div className="container hero-grid">
-      <div className="hero-copy"><span className="eyebrow"><span className="status-dot" /> AUDIO. VISUAL. CONNECTION.</span>
-        <h1>Таны эвент.<br />Бидний <span>шийдэл.</span></h1>
-        <p className="hero-description">Дуу, дүрс, синхрон орчуулга, шууд дамжуулалт.<br className="desktop-break" /> Арга хэмжээний тань техникийн хэрэгцээг нэг дор.</p>
-        <div className="hero-buttons"><a className="button button-lime" href="#equipment">Төхөөрөмж үзэх <ArrowUpRight size={18} /></a><ContactButton className="button button-outline">Үнийн санал авах</ContactButton></div>
-        <div className="hero-checks"><span><Check size={15} /> Хүргэлт, суурилуулалт</span><span><Check size={15} /> Техникийн дэмжлэг</span></div>
-      </div>
-      <div className="hero-visual">
-        <Image className="hero-photo" src="/b38155c1-f35f-4e60-9287-21756ae7fe0b.jpeg" alt="Синхрон орчуулгын кабин суурилуулсан арга хэмжээний танхим" fill sizes="(max-width: 760px) calc(100vw - 44px), 48vw" priority />
-        <div className="visual-top"><span className="live-label"><span /> READY FOR YOUR NEXT EVENT</span><AudioLines size={25} /></div>
-        <div className="visual-bottom"><span>BEHIND EVERY GREAT EVENT</span><strong>Бүх зүйл<br />нэг хэмнэлд.</strong><div className="visual-bottom-row"><span>INTERPRO / TECHNICAL SOLUTIONS</span><span className="round-arrow"><ArrowUpRight /></span></div></div>
-        <div className="visual-lines" aria-hidden="true">{Array.from({ length: 29 }, (_, index) => <i key={index} style={{ height: `${12 + ((index * 17) % 49)}px` }} />)}</div>
-      </div>
+    <Image className="hero-background" src="/b38155c1-f35f-4e60-9287-21756ae7fe0b.jpeg" alt="INTERPRO-ийн суурилуулсан хурлын танхим, синхрон орчуулгын кабин" fill sizes="100vw" preload />
+    <div className="hero-shade" aria-hidden="true" />
+    <div className="container hero-content">
+      <span className="eyebrow">СИНХРОН ОРЧУУЛГЫН ТОНОГ ТӨХӨӨРӨМЖ · ТЕХНИКИЙН ҮЙЛЧИЛГЭЭ</span>
+      <h1>Таны хэл.<br />Таны арга хэмжээ.<br />Бидний техникийн шийдэл.</h1>
+      <p>Синхрон орчуулгын тоног төхөөрөмжийн түрээс, хурлын аудио систем.<br className="desktop-break" /> Суурилуулалтаас арга хэмжээ дуусах хүртэлх техникийн үйлчилгээ.</p>
+      <div className="hero-buttons"><a className="button button-blue" href="#services">Бидний үйлчилгээ <Play size={14} fill="currentColor" /></a><a className="hero-secondary" href="#equipment">Тоног төхөөрөмж <ArrowRight size={17} /></a></div>
     </div>
-    <div className="container hero-footer"><span>ХУРАЛ · ФОРУМ · СЕМИНАР · ЭВЕНТ</span><a href="#equipment">Доош үзэх <ArrowDown size={15} /></a></div>
   </section>;
 }
