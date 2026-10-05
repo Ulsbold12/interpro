@@ -46,6 +46,8 @@
 .pc-details { top: 22px; left: 26px; right: 26px; z-index: 5; pointer-events: none; }
 .pc-details h3 { font-size: clamp(24px,2.4vw,33px); font-weight: 500; letter-spacing: -.7px; line-height: 1.2; color: #f3f3f5; }
 .pc-details p { font-size: 10px; line-height: 1.6; color: #bfc1c8; margin-top: 7px; letter-spacing: .2px; }
+.team-section .pc-details h3 { font-size: clamp(20px,1.8vw,25px); }
+.team-section .pc-avatar-content { top: 110px; }
 .pc-user-info {
   position: absolute; bottom: 18px; left: 16px; right: 16px; z-index: 6;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;

@@ -5,9 +5,9 @@ import { useContact } from "./ContactProvider";
 import { SectionTitle } from "./SectionTitle";
 
 const team = [
-  { name: "Amgalan", image: "/inter1.jpeg", email: "Amgalan@interpro.mn", phone: "88012121" },
-  { name: "Anand", image: "/inter2.jpeg", email: "Anand@interpro.mn", phone: "88111352" },
-  { name: "Onon", image: "/inter3.jpeg", email: "Onon@interpro.mn", phone: "94040752" },
+  { name: "Amgalan Narantuya", image: "/inter1.jpeg", email: "Amgalan@interpro.mn", phone: "88012121" },
+  { name: "Anand Badral", image: "/inter2.jpeg", email: "Anand@interpro.mn", phone: "88111352" },
+  { name: "Onon Dorjsuren", image: "/inter3.jpeg", email: "Onon@interpro.mn", phone: "94040752" },
 ];
 export function TeamSection() {
   const contact = useContact();
