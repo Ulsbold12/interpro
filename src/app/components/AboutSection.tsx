@@ -2,7 +2,7 @@ import { SectionTitle } from "./SectionTitle";
 
 export function AboutSection() {
   return <section className="section company-about" id="about"><div className="container">
-    <SectionTitle>Бидний тухай</SectionTitle>
+    <SectionTitle eyebrow="04 / INTERPRO" description="Олон хэлний арга хэмжээний тоног төхөөрөмж, техникийн үйлчилгээ.">Бидний тухай</SectionTitle>
     <div className="company-about-layout">
       <div className="company-intro">
         <p>Interpro нь олон улсын хурал, уулзалт, сургалт, семинар, форум болон олон хэлний оролцоотой арга хэмжээнд зориулсан синхрон орчуулгын тоног төхөөрөмжийн түрээс, техникийн үйлчилгээ үзүүлдэг компани юм.</p>

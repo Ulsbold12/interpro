@@ -12,7 +12,7 @@ export function TeamSection() {
   return (
     <section className="section team-section" id="solutions" aria-labelledby="team-heading">
       <div className="container">
-        <SectionTitle id="team-heading" description="Арга хэмжээнийхээ талаар ярилцъя. Манай багтай шууд холбогдоорой.">Манай баг, хамт олон</SectionTitle>
+        <SectionTitle eyebrow="05 / INTERPRO" id="team-heading" description="Арга хэмжээнийхээ талаар ярилцъя. Манай багтай шууд холбогдоорой.">Манай баг, хамт олон</SectionTitle>
         <div className="team-grid">
           {team.map((member) => (
             <article className="team-card" key={member.email}>

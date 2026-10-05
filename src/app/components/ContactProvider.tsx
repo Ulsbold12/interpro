@@ -22,7 +22,7 @@ export function ContactProvider({ children }: { children: ReactNode }) {
     {children}
     <dialog ref={dialog} className="contact-dialog" aria-labelledby="contact-title" onCancel={event => { event.preventDefault(); close(); }} onClick={event => { if (event.target === event.currentTarget) close(); }}>
       <div className="dialog-content"><button className="icon-button dialog-close" onClick={close} disabled={busy} aria-label="Хаах"><X size={21} /></button>
-        <span className="eyebrow">LET’S TALK</span><h2 id="contact-title">Бидэнтэй холбогдох</h2><p>Хэрэгцээгээ хуваалцаарай. Танд тохирох шийдлийг хамт сонгоё.</p>
+        <span className="eyebrow">INTERPRO / ХОЛБОО БАРИХ</span><h2 id="contact-title">Бидэнтэй холбогдох</h2><p>Хэрэгцээгээ хуваалцаарай. Танд тохирох шийдлийг хамт сонгоё.</p>
         <div className="subject-line"><span>Таны сонирхсон бараа / үйлчилгээ</span><strong>{subject}</strong></div>
         <InquiryForm key={version} subject={subject || undefined} onBusyChange={setBusy} onClose={close} />
       </div>
