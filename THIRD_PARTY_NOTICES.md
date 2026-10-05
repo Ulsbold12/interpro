@@ -1,8 +1,10 @@
-# React Bits ProfileCard
+# React Bits components
 
-`src/app/components/ProfileCard.jsx` and `ProfileCard.css` adapt the React Bits ProfileCard source for Interpro's team profiles.
+ProfileCard, ParticleText, and ScrollExpand in `src/app/components/` adapt the React Bits sources supplied for Interpro's website.
 
 Source: https://reactbits.dev/components/profile-card
+Source: https://reactbits.dev/text-animations/particle-text
+Source: https://reactbits.dev/animations/scroll-expand
 License: https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
 
 MIT + Commons Clause License Condition v1.0
