@@ -5,7 +5,7 @@ import ParticleText from "./ParticleText";
 
 export function Hero() {
   return <section className="hero" id="home" aria-labelledby="hero-title">
-    <Image className="hero-background" src="/b38155c1-f35f-4e60-9287-21756ae7fe0b.jpeg" alt="INTERPRO-ийн хурлын танхим дахь синхрон орчуулгын бүхээгийн суурилуулалт" fill sizes="100vw" preload />
+    <Image className="hero-background" src="/prohuuhen.jpeg" alt="Хурлын танхимыг харж синхрон орчуулга хийж буй орчуулагч" fill sizes="100vw" preload />
     <div className="hero-shade" aria-hidden="true" />
     <div className="container hero-content">
       <span className="eyebrow">INTERPRO / СИНХРОН ОРЧУУЛГА · ХУРЛЫН АУДИО</span>
